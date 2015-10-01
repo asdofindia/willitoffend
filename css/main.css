@@ -1,22 +1,172 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
+
+body {
+    font-size: 1em; /*10px*/
+    font-family: "Open Sans", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased!important;;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 690px;
+}
+a, button{
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.maincnt{
+	margin:50px auto;
+	float: none;
+	text-align: center;
+}
+
+.maincnt>h1{
+	font-size:4.2em;
+	color: #3498db;
+	font-weight:600;
+	margin-bottom:20px;
+}
+.maincnt>p{
+	font-size:2em;
+	color:#2c3e50;
+	line-height:30px;
+}
+
+.mainform{
+	margin:50px auto;
+	float: none;
+	text-align:center;
+}
+.mainform h4{
+	font-size:3em;
+	color: #27ae60;
+	font-weight:600;
+	margin-bottom:20px;
+}
+.mainform textarea{
+	height:250px;
+	width:100%;
+	font-size:1.8em;
+	padding:10px;
+}
+
+.analyse{
+	display:inline-block;
+	margin:20px 0;
+	padding:10px 25px;
+	font-size:3em;
+	font-weight:800;
+	background-color:#e74c3c;
+	border-radius:25px;
+	color:#fff;
+	box-shadow:0px 4px 0px #c0392b;
+	background-clip:padding-box;
+
+}
+.analyse:hover,.analyse:focus{
+	text-decoration:none;
+	color:#c0392b;
+	box-shadow:0px 2px 0px #c0392b;
+	outline:none;
+}
 
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+.progressbarcnt {
+	display:none;
+	margin:50px auto;
+	float:none;
+	padding: 15px 15px;
+}
+.progressbarcnt progress {
+	background-color: #f3f3f3;
+	border: 0;
+	width: 100%;
+	height: 28px;
+	border-radius: 30px;
+}
+.progressbarcnt progress::-webkit-progress-bar {
+	background-color: #f3f3f3;
+	border-radius: 9px;
+}
+.progressbarcnt progress::-webkit-progress-value {
+	background: #cdeb8e;
+	background: -moz-linear-gradient(top,  #cdeb8e 0%, #a5c956 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cdeb8e), color-stop(100%,#a5c956));
+	background: -webkit-linear-gradient(top,  #cdeb8e 0%,#a5c956 100%);
+	background: -o-linear-gradient(top,  #cdeb8e 0%,#a5c956 100%);
+	background: -ms-linear-gradient(top,  #cdeb8e 0%,#a5c956 100%);
+	background: linear-gradient(to bottom,  #cdeb8e 0%,#a5c956 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 );
+	border-radius: 9px;
+}
+.progressbarcnt progress::-moz-progress-bar {
+	background: #cdeb8e;
+	background: -moz-linear-gradient(top,  #cdeb8e 0%, #a5c956 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cdeb8e), color-stop(100%,#a5c956));
+	background: -webkit-linear-gradient(top,  #cdeb8e 0%,#a5c956 100%);
+	background: -o-linear-gradient(top,  #cdeb8e 0%,#a5c956 100%);
+	background: -ms-linear-gradient(top,  #cdeb8e 0%,#a5c956 100%);
+	background: linear-gradient(to bottom,  #cdeb8e 0%,#a5c956 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 );
+	border-radius: 9px;
 
+}
+.progressbarcnt .progress-value {
+	padding: 0px 5px;
+	line-height: 20px;
+	margin-left: 5px;
+	font-size: 2.8em;
+	color:#e74c3c ;
+	height: 18px;
+	float: right;
+}
 
+.donemsg{
+	display:none;
+	text-align:center;
+	font-size:3em;
+	color:#2980b9;
+	font-weight:800;
+	margin-top:40px;
+}
 
+.resultcnt{
+	display:none;
+	margin:50px auto;
+	float:none;
+	text-align:center;
+}
+.resultcnt>h3.yes{
+	font-size:0.3em;
+	font-weight:800;
+	color:#e74c3c;
+	text-align:center;
+}
+.resultcnt>p{
+	display:none;
+	font-size:3em;
+	color:#2c3e50;
+	line-height:30px;
+}
+.growtext{
+    animation-delay: 0.8s;
+    animation-duration: 1s;
+    animation-name: growme;
+    animation-fill-mode: forwards;
+}
+@keyframes growme {
+  to {
+    font-size:10em;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer{
+	display:block;
+	opacity:0;
+	margin:80px auto;
+	float:none;
+	text-align:center;
+	color:#2c3e50;
+	font-size:1.4em;
+}
