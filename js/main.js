@@ -39,6 +39,15 @@ $(document).ready(function() {
 	});
 
 
+
+        $.getJSON( "answers.json", function( data ) {
+       
+                var answerlen = data.length;
+                var randomkey = Math.floor(Math.random() * (answerlen+1));
+                $(".yes").text(data[randomkey][0]);
+                $(".why").text(data[randomkey][1]);         
+        });
+
 });
 
 
